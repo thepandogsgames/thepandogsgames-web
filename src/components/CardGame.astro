@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+import polarisLogo from '../assets/img/polaris_logo.png';
+---
+
+<section class="bg-black rounded-lg flex justify-around gap-5 pl-10 overflow-hidden">
+    <div class="flex flex-col justify-around text-white w-3/6 text-center">
+        <p class="uppercase text-4xl">Polaris</p>
+        <span class="p-1 bg-gray-800 rounded-full">Windows - Linux - Mobile</span>
+    </div>
+    <a href="https://polaris.thepandogsgames.com/" class="skew-y-[8deg] backdrop-blur-3xl">
+        <Image src={polarisLogo} alt="Polaris logo." class="max-w-full h-auto" />
+    </a>
+</section>
+
