@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write \"src/**/*.astro\""
+    "format": "prettier --write \"src/**/*.astro\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.2.2",
