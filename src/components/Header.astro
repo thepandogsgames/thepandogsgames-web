@@ -16,7 +16,7 @@ const t = useTranslations(lang);
   <!-- Menú icono thepandogsgames -->
   <nav x-show="isOpenLeftMenu" x-on:click.outside="isOpenLeftMenu = false" class="mx-auto flex flex-col lg:flex-row lg:max-w-7xl justify-between p-6 lg:px-8">
     <div class="flex flex-col gap-2 mt-10 mb-12 lg:mt-0">
-        <h1 class="font-bold uppercase w-full lg:w-[212px] px-3 py-1 border-b-2 border-black">{t("games")}</h1>
+        <p class="font-bold uppercase w-full lg:w-[212px] px-3 py-1 border-b-2 border-black">{t("games")}</p>
         <a href="https://polaris.thepandogsgames.com/" class="rounded-lg py-2 pl-6 pr-3 text-sm font-semibold uppercase leading-7 text-gray-600 hover:bg-gray-100 flex items-center gap-1">
           Polaris
           <Image src={openNewLinkIcon} alt="Polaris logo" class="w-5" />

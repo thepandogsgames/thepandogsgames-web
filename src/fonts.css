@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Handjet";
+    src: url('./assets/fonts/Anton-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "FiraSans";
+    src: url('./assets/fonts/FiraSans-Regular.ttf') format('truetype');
+}
+
+.anton-font {
+    font-family: "Handjet";
+    font-display: swap;
+}
+
+* {
+    font-family: "FiraSans";
+    font-display: swap;
+}
