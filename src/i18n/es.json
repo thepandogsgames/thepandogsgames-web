@@ -5,5 +5,16 @@
   "closeMenu": "Cerra menú",
   "games": "Juegos",
   "whoAreWe": "Quienes somos",
-  "figcaption.latestRelease": "Nuestro último lanzamiento, quieres probarlo?"
+  "hero.title": "Nos vemos en la Leréz UP",
+  "hero.description": "¡Únete a nosotros los días 26 y 27 de agosto para la presentación de nuestro primer juego, Polaris! ¡No te lo pierdas!",
+  "hero.button": "Más información",
+  "figcaption.latestRelease": "Nuestro último lanzamiento, quieres probarlo?",
+  "whoarewe.description": "Somos un pequeño estudio de videojuegos, que se encuentra en Vigo, donde intentamos convertir nuestras locuras en videojuegos.",
+  "footer.description": "Somos un pequeño estudio de videojuegos, que se encuentra en Vigo, donde intentamos convertir nuestras locuras en videojuegos.",
+  "ourGames": "Nuestros juegos",
+  "job.cofounder-programmer-gamedesigner": "Co-fundador / Programador / Diseñador de juegos",
+  "job.cofounder-programmer-ux": "Co-fundador / Programador / Diseñador /UI",
+  "job.cofounder-programmer": "Co-fundador / Programador",
+  "job.musician": "Músico",
+  "job.gamedesigner": "Diseñador de juegos"
 }
