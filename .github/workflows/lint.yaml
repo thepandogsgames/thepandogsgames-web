@@ -1,0 +1,22 @@
+name: Lint files
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-astro-files:
+    name: Check Astro Files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Prettier
+        run: npm run check-astro-files
