@@ -1,31 +1,47 @@
 ---
-import { Image } from 'astro:assets';
-import polarisLogo from '@assets/img/polaris_logo.png';
+import { Image } from 'astro:assets'
+import polarisLogo from '@assets/img/polaris_logo.png'
 import thePandogsGamesLogo from '@assets/logos/thepandogsgames-logo.svg'
-import openNewLinkIcon from '@assets/icons/open_new_link.svg';
-import { getLangFromUrl, useTranslations } from '@i18n/utils';
-import Headerbase from '@components/header/header-base.astro';
-import HeaderMobile from '@components/header/header-mobile.astro';
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+import openNewLinkIcon from '@assets/icons/open_new_link.svg'
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import Headerbase from '@components/header/header-base.astro'
+import HeaderMobile from '@components/header/header-mobile.astro'
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
-<header x-data="{isOpenMobileMenu: false, isOpenLeftMenu: false}" x-bind:class="isOpenLeftMenu ? 'bg-white border-b-2' : 'bg-black' ">
+<header
+  x-data="{isOpenMobileMenu: false, isOpenLeftMenu: false}"
+  x-bind:class="isOpenLeftMenu ? 'bg-white border-b-2' : 'bg-black' "
+>
   <Headerbase logo={thePandogsGamesLogo} />
   <HeaderMobile logo={thePandogsGamesLogo} />
   <!-- Menú icono thepandogsgames -->
-  <nav x-show="isOpenLeftMenu" x-on:click.outside="isOpenLeftMenu = false" class="mx-auto flex flex-col lg:flex-row lg:max-w-7xl justify-between p-6 lg:px-8">
+  <nav
+    x-show="isOpenLeftMenu"
+    x-on:click.outside="isOpenLeftMenu = false"
+    class="mx-auto flex flex-col lg:flex-row lg:max-w-7xl justify-between p-6 lg:px-8"
+  >
     <div class="flex flex-col gap-2 mt-10 mb-12 lg:mt-0">
-        <p class="font-bold uppercase w-full lg:w-[212px] px-3 py-1 border-b-2 border-black">{t("games")}</p>
-        <a href="https://polaris.thepandogsgames.com/" class="rounded-lg py-2 pl-6 pr-3 text-sm font-semibold uppercase leading-7 text-gray-600 hover:bg-gray-100 flex items-center gap-1">
-          Polaris
-          <Image src={openNewLinkIcon} alt="Polaris logo" class="w-5" />
-        </a>
+      <p
+        class="font-bold uppercase w-full lg:w-[212px] px-3 py-1 border-b-2 border-black"
+      >
+        {t('games')}
+      </p>
+      <a
+        href="https://polaris.thepandogsgames.com/"
+        class="rounded-lg py-2 pl-6 pr-3 text-sm font-semibold uppercase leading-7 text-gray-600 hover:bg-gray-100 flex items-center gap-1"
+      >
+        Polaris
+        <Image src={openNewLinkIcon} alt="Polaris logo" class="w-5" />
+      </a>
     </div>
     <a href="https://polaris.thepandogsgames.com/">
-      <figure class="w-10/12 lg:w-7/12  mx-auto">
+      <figure class="w-10/12 lg:w-7/12 mx-auto">
         <Image src={polarisLogo} alt="Polaris logo" class="max-w-full h-auto" />
-        <figcaption class="mt-2 text-center">{t("figcaption.latestRelease")}</figcaption>
+        <figcaption class="mt-2 text-center">
+          {t('figcaption.latestRelease')}
+        </figcaption>
       </figure>
     </a>
   </nav>
