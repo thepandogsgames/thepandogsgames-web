@@ -26,9 +26,9 @@ const t = useTranslations(lang);
 				  <Image src={lerezUpImage} alt="Lerez up banner" class="w-11/12 md:w-[24rem] skew-y-6	shadow-2xl shadow-slate-900	 max-w-none rounded-md bg-white/5 ring-1 ring-white/10 mx-auto mt-10 lg:mt-0 md:mx-0" />
 				</div>
 		</section>
-		<section id="games" class="py-10 w-9/12 mx-auto">
+		<section id="games" class="py-10 w-11/12 md:w-9/12 mx-auto">
 				<h2 class="anton-font text-4xl mb-5 font-bold">{t("ourGames")}</h2>
-				<div class="grid md:grid-cols-2">
+				<div class="grid grid-cols-1 lg:grid-cols-2 3xl:grid-cols-3">
 					<CardGame />
 				</div>
 		</section>
