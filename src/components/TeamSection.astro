@@ -1,63 +1,66 @@
 ---
-import CardTeam from '@components/CardTeam.astro';
-import carlosImg from '@assets/img/team/carlos.jpeg';
+import CardTeam from '@components/CardTeam.astro'
+import carlosImg from '@assets/img/team/carlos.jpeg'
 
-import { getLangFromUrl, useTranslations } from '@i18n/utils';
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section id="whoAreWe" class="py-10 w-9/12 3xl:w-6/12 mx-auto">
-    <h3 class="russo-font text-4xl mb-5 font-bold">{t("whoAreWe")}</h3>
-    <div class="grid gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-      <div class="max-w-2xl">
-        <p class="mt-6 text-lg leading-8 text-gray-600">
-          {t("whoarewe.description")}
+  <h3 class="russo-font text-4xl mb-5 font-bold">{t('whoAreWe')}</h3>
+  <div class="grid gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+    <div class="max-w-2xl">
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+        {t('whoarewe.description')}
       </p>
-      </div>
-      <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-          <li>
-            <CardTeam
-              name="Alejandro Estévez"
-              job={t("job.cofounder-programmer-gamedesigner")}
-              linkedinLink='https://www.linkedin.com/in/alejandro-est%C3%A9vez-mart%C3%ADnez-821884215/'
-              twitterLink='https://twitter.com/alistairaem'
-              githubLink='https://github.com/alistairaem'
-            />
-          </li>
-        <li>
-          <CardTeam
-            name="Carlos Fraile"
-            image={carlosImg}
-            job={t("job.cofounder-programmer-ux")}
-            linkedinLink='https://www.linkedin.com/in/carlos-fraile-93a466127/'
-            twitterLink='https://twitter.com/ThePandogs'
-            githubLink='https://github.com/ThePandogs'
-          />
-        </li>
-        <li>
-          <CardTeam
-            name="Sergio Alonso"
-            job={t("job.cofounder-programmer")}
-            linkedinLink='https://es.linkedin.com/in/sergio-alonso-otero'
-            githubLink='https://github.com/seralot'
-          />
-        </li>
-        <li>
-          <CardTeam
-            name="Fran"
-            job={t("job.musician")}
-            linkedinLink='https://www.linkedin.com/in/francisco-javier-de-los-santos-alonso-842061178/'
-            twitterLink='https://twitter.com/fjsanalo'
-          />
-        </li>
-        <li>
-          <CardTeam
-            name="Ramiro"
-            job={t("job.gamedesigner")}
-            twitterLink='https://twitter.com/MarikEGT'
-          />
-        </li>
-      </ul>
     </div>
+    <ul
+      role="list"
+      class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+    >
+      <li>
+        <CardTeam
+          name="Alejandro Estévez"
+          job={t('job.cofounder-programmer-gamedesigner')}
+          linkedinLink="https://www.linkedin.com/in/alejandro-est%C3%A9vez-mart%C3%ADnez-821884215/"
+          twitterLink="https://twitter.com/alistairaem"
+          githubLink="https://github.com/alistairaem"
+        />
+      </li>
+      <li>
+        <CardTeam
+          name="Carlos Fraile"
+          image={carlosImg}
+          job={t('job.cofounder-programmer-ux')}
+          linkedinLink="https://www.linkedin.com/in/carlos-fraile-93a466127/"
+          twitterLink="https://twitter.com/ThePandogs"
+          githubLink="https://github.com/ThePandogs"
+        />
+      </li>
+      <li>
+        <CardTeam
+          name="Sergio Alonso"
+          job={t('job.cofounder-programmer')}
+          linkedinLink="https://es.linkedin.com/in/sergio-alonso-otero"
+          githubLink="https://github.com/seralot"
+        />
+      </li>
+      <li>
+        <CardTeam
+          name="Fran"
+          job={t('job.musician')}
+          linkedinLink="https://www.linkedin.com/in/francisco-javier-de-los-santos-alonso-842061178/"
+          twitterLink="https://twitter.com/fjsanalo"
+        />
+      </li>
+      <li>
+        <CardTeam
+          name="Ramiro"
+          job={t('job.gamedesigner')}
+          twitterLink="https://twitter.com/MarikEGT"
+        />
+      </li>
+    </ul>
+  </div>
 </section>
