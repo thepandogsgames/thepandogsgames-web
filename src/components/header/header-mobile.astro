@@ -54,12 +54,12 @@ const { logo } = Astro.props
           <a
             href="#games"
             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-            >{t('games')}</a
+            x-on:click="isOpenMobileMenu = false">{t('games')}</a
           >
           <a
             href="#whoAreWe"
             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-            >{t('whoAreWe')}</a
+            x-on:click="isOpenMobileMenu = false">{t('whoAreWe')}</a
           >
         </div>
         <div class="py-6" x-data="{isOpenChangeLanguage: false }">

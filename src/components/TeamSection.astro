@@ -1,6 +1,10 @@
 ---
 import CardTeam from '@components/CardTeam.astro'
+import alexImg from '@assets/img/team/alex.jpg'
 import carlosImg from '@assets/img/team/carlos.jpeg'
+import franImg from '@assets/img/team/fran.webp'
+import rubenImg from '@assets/img/team/ruben.jpg'
+import sergioImg from '@assets/img/team/sergio.png'
 
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
 const lang = getLangFromUrl(Astro.url)
@@ -22,6 +26,7 @@ const t = useTranslations(lang)
       <li>
         <CardTeam
           name="Alejandro Estévez"
+          image={alexImg}
           job={t('job.cofounder-programmer-gamedesigner')}
           linkedinLink="https://www.linkedin.com/in/alejandro-est%C3%A9vez-mart%C3%ADnez-821884215/"
           twitterLink="https://twitter.com/alistairaem"
@@ -41,6 +46,7 @@ const t = useTranslations(lang)
       <li>
         <CardTeam
           name="Sergio Alonso"
+          image={sergioImg}
           job={t('job.cofounder-programmer')}
           linkedinLink="https://es.linkedin.com/in/sergio-alonso-otero"
           githubLink="https://github.com/seralot"
@@ -49,11 +55,24 @@ const t = useTranslations(lang)
       <li>
         <CardTeam
           name="Fran"
+          image={franImg}
           job={t('job.musician')}
           linkedinLink="https://www.linkedin.com/in/francisco-javier-de-los-santos-alonso-842061178/"
           twitterLink="https://twitter.com/fjsanalo"
         />
       </li>
+      <li>
+        <CardTeam
+          name="Rubén Riveiro"
+          image={rubenImg}
+          job={t('job.artist')}
+          linkedinLink="https://www.linkedin.com/www.linkedin.com/in/ruben-riveiro-fernandez-45930443"
+        />
+      </li>
+      <li>
+        <CardTeam name="Sergio Pampillón" job={t('job.artist')} />
+      </li>
+
       <li>
         <CardTeam
           name="Ramiro"
