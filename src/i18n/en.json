@@ -18,5 +18,6 @@
   "job.musician": "Musician",
   "job.gamedesigner": "Game designer",
   "job.artist": "Artist",
-  "cardgame.button": "Play free"
+  "cardgame.button": "Play free",
+  "footer.createdBy": "Created with ❤️ by"
 }
