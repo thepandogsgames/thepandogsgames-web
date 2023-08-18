@@ -12,10 +12,11 @@
   "whoarewe.description": "Somos un pequeno estudio de videoxogos situado en Vigo, onde intentamos converter as nosas ideas en videoxogos.",
   "footer.description": "Somos un pequeno estudio de videoxogos situado en Vigo, onde intentamos converter as nosas ideas en videoxogos.",
   "ourGames": "Os noso xogos",
-  "job.cofounder-programmer-gamedesigner": "Co-fundador / Programador / Deseñador de xogos",
-  "job.cofounder-programmer-ux": "Co-fundador / Programador / Deseñador UX/UI",
-  "job.cofounder-programmer": "Co-fundador / Programador",
+  "job.cofounder-programmer-gamedesigner": "Co-fundador, Programado, Deseñador de xogos",
+  "job.cofounder-programmer-ux": "Co-fundador, Programador, Deseñador UX/UI",
+  "job.cofounder-programmer": "Co-fundador, Programador",
   "job.musician": "Músico",
   "job.gamedesigner": "Deseñador de xogos",
+  "job.artist": "Artista",
   "cardgame.button": "Xogar gratis"
 }
