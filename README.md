@@ -2,7 +2,7 @@
 
 # Description
 
-Página web del estudio indie ThePandogsGames, que incluye información sobre los juegos y el equipo.
+Página web del estudio indie The Pandogs Games, que incluye información sobre los juegos y el equipo.
 
 ## Desarrollo
 
