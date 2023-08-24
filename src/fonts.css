@@ -18,3 +18,9 @@
     font-family: "FiraSans";
     font-display: swap;
 }
+
+img.no-drag {
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+  }
