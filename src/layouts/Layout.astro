@@ -25,12 +25,14 @@ const { title } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href="https://thepandogsgames.com/" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="twitter:creator" content="@ThePandogsGames" />
-    <meta name="twitter:title" content="The Pandogs Games" />
-    <meta name="twitter:description" content={trans('head.description')} />
-    <meta content="summary_large_image" name="twitter:card" />
-    <meta name="twitter:image" content={thePandogsGamesLogo.src} />
-  </head>
+    <meta name="twitter:card" content="summary" /></head
+  >
+  <meta name="twitter:creator" content="@ThePandogsGames" />
+  <meta name="twitter:title" content="The Pandogs Games" />
+  <meta name="twitter:description" content={trans('head.description')} />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta name="twitter:image" content={thePandogsGamesLogo.src} />
+
   <body>
     <Header />
     <slot />
