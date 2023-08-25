@@ -3,9 +3,10 @@ import '../fonts.css'
 import Header from '@components/Header.astro'
 import Footer from '@components/Footer.astro'
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import thePandogsGamesLogo from '@assets/logos/thepandogsgames-logo.svg'
+
 const lang = getLangFromUrl(Astro.url)
 const trans = useTranslations(lang)
-
 interface Props {
   title: string
 }
@@ -24,6 +25,11 @@ const { title } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href="https://thepandogsgames.com/" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="twitter:creator" content="@ThePandogsGames" />
+    <meta name="twitter:title" content="The Pandogs Games" />
+    <meta name="twitter:description" content={trans('head.description')} />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta name="twitter:image" content={thePandogsGamesLogo.src} />
   </head>
   <body>
     <Header />
