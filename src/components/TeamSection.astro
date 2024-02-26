@@ -7,7 +7,6 @@ import pampiImg from '@assets/img/team/pampi.png'
 import ramiroImg from '@assets/img/team/ramiro.jpeg'
 import rubenImg from '@assets/img/team/ruben.jpg'
 import sergioImg from '@assets/img/team/sergio.webp'
-import sergioRamirezImg from '@assets/img/team/sergio-ramirez.jpeg'
 
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
 const lang = getLangFromUrl(Astro.url)
@@ -86,13 +85,6 @@ const t = useTranslations(lang)
           image={ramiroImg}
           job={t('job.gamedesigner')}
           twitterLink="https://twitter.com/MarikEGT"
-        />
-      </li>
-      <li>
-        <CardTeam
-          name="Sergio Ramírez"
-          image={sergioRamirezImg}
-          job={t('job.artist')}
         />
       </li>
     </ul>
