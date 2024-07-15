@@ -1,25 +1,13 @@
 ---
 import '../fonts.css'
-import { Image } from 'astro:assets'
 import Layout from '../layouts/Layout.astro'
-import lerezUpImage from '@assets/img/lerez-up.jpeg'
-import CardGame from '@components/CardGame.astro'
-import TeamSection from '@components/TeamSection.astro'
-import HeroSection from '@components/HeroSection.astro'
-
-import { getLangFromUrl, useTranslations } from '../i18n/utils'
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
+import GamesSection from 'src/sections/GamesSection.astro'
+import TeamSection from 'src/sections/TeamSection.astro'
 ---
 
 <Layout title="The Pandogs Games">
   <main>
-    <section id="games" class="py-10 w-11/12 md:w-9/12 mx-auto">
-      <h2 class="russo-font text-4xl mb-5 font-bold">{t('ourGames')}</h2>
-      <div class="grid grid-cols-1 lg:grid-cols-2 3xl:grid-cols-3">
-        <CardGame />
-      </div>
-    </section>
+    <GamesSection />
     <TeamSection />
   </main>
 </Layout>
