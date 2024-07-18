@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://thepandogsgames.com/",
+  site: 'https://thepandogsgames.github.io',
   i18n: {
     defaultLocale: "en",
     locales: ["es", "en", "gal"],
