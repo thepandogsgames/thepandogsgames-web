@@ -19,7 +19,7 @@ jobs:
       - name: Install, build, and upload your site output
         uses: withastro/action@v2
         with:
-            package_manager: bun@latest
+            package-manager: bun@latest
 
   deploy:
     needs: build
