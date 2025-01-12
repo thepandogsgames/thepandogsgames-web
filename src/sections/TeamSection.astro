@@ -3,9 +3,10 @@ import CardTeam from '@components/CardTeam.astro'
 import alexImg from '@assets/img/team/alex.jpg'
 import carlosImg from '@assets/img/team/carlos.jpeg'
 import franImg from '@assets/img/team/fran.jpg'
-import pampiImg from '@assets/img/team/pampi.png'
+import pampiImg from '@assets/img/team/pampi.jpg'
 import rubenImg from '@assets/img/team/ruben.jpg'
 import sergioImg from '@assets/img/team/sergio.webp'
+import pabloImg from '@assets/img/team/pablo-carballa.webp'
 
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
 const lang = getLangFromUrl(Astro.url)
@@ -76,6 +77,15 @@ const t = useTranslations(lang)
           image={pampiImg}
           job={t('job.artist')}
           twitterLink="https://twitter.com/PixelPamp"
+        />
+      </li>
+      <li>
+        <CardTeam
+          name="Pablo Carballa"
+          image={pabloImg}
+          job={t('job.artist')}
+          instagramLink="https://www.instagram.com/_chipswithsauce/"
+          artstationLink="https://www.artstation.com/chipswithsauce"
         />
       </li>
     </ul>

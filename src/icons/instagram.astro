@@ -1,8 +1,16 @@
+---
+interface Props {
+  classList?: string
+  height?: string
+}
+
+const { classList = 'fill-white', height = '1.5em' } = Astro.props
+---
+
 <svg
-  class="fill-white"
   xmlns="http://www.w3.org/2000/svg"
-  height="1.5em"
-  class:list={Astro.props.classList}
+  class:list={classList}
+  height={height}
   viewBox="0 0 448 512"
   aria-label="Logo Instagram"
   ><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->

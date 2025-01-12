@@ -5,6 +5,8 @@ import defaultLogo from '@assets/logos/Logo.svg'
 import XIcon from '@icons/x.astro'
 import LinkedinIcon from '@icons/linkedin.astro'
 import GithubIcon from '@icons/github.astro'
+import InstagramIcon from '@icons/instagram.astro'
+import ArtStationIcon from '@icons/artstation.astro'
 
 interface Props {
   name: string
@@ -13,6 +15,8 @@ interface Props {
   twitterLink?: string
   linkedinLink?: string
   githubLink?: string
+  instagramLink?: string
+  artstationLink?: string
 }
 
 const {
@@ -22,6 +26,8 @@ const {
   twitterLink,
   linkedinLink,
   githubLink,
+  instagramLink,
+  artstationLink,
 } = Astro.props
 ---
 
@@ -76,6 +82,38 @@ const {
           >
             <span class="sr-only">Github</span>
             <GithubIcon classList="fill-black hover:fill-indigo-600" />
+          </a>
+        )
+      }
+      {
+        instagramLink && (
+          <a
+            class="hover:fill-indigo-600"
+            href={instagramLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="sr-only">Instagram</span>
+            <InstagramIcon
+              classList="fill-black hover:fill-indigo-600"
+              height="1em"
+            />
+          </a>
+        )
+      }
+      {
+        artstationLink && (
+          <a
+            class="hover:fill-indigo-600"
+            href={artstationLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="sr-only">ArtStation</span>
+            <ArtStationIcon
+              classList="fill-black hover:fill-indigo-600"
+              height="1em"
+            />
           </a>
         )
       }
