@@ -8,6 +8,7 @@ import pampiImg from '@assets/img/team/pampi.jpg'
 import ramiroImg from '@assets/img/team/ramiro.avif'
 import rubenImg from '@assets/img/team/ruben.jpg'
 import sergioImg from '@assets/img/team/sergio.webp'
+import jesusAlcalaImg from '@assets/img/team/jesus-alcala.jpg'
 
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
 const lang = getLangFromUrl(Astro.url)
@@ -95,6 +96,15 @@ const t = useTranslations(lang)
           image={ramiroImg}
           job={t('job.gamedesigner')}
           twitterLink="https://twitter.com/MarikEGT"
+        />
+      </li>
+      <li>
+        <CardTeam
+          name="Jesús Alcalá"
+          image={jesusAlcalaImg}
+          job={t('job.artist')}
+          twitterLink="https://x.com/Focaro115"
+          artstationLink="https://www.artstation.com/jesusalcala"
         />
       </li>
     </ul>
