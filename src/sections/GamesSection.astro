@@ -1,5 +1,6 @@
 ---
 import CardGame from '@components/CardGame.astro'
+import games from 'src/data/games.json'
 
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 const lang = getLangFromUrl(Astro.url)
@@ -9,6 +10,6 @@ const t = useTranslations(lang)
 <section id="games" class="w-9/12 3xl:w-6/12 mx-auto">
   <h1 class="russo-font text-4xl mb-5 font-bold">{t('ourGames')}</h1>
   <div class="grid grid-cols-1 lg:grid-cols-2 3xl:grid-cols-3 mt-12">
-    <CardGame />
+    {games.map((game) => <CardGame game={game} />)}
   </div>
 </section>

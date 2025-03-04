@@ -1,25 +1,36 @@
 ---
 import { Image } from 'astro:assets'
-import polarisLogo from '@assets/img/polaris_logo.png'
 import WindowsIcon from '@icons/windows.astro'
 import ItchioIcon from '@icons/itchio.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 
+const images = import.meta.glob('/src/assets/img/*', { eager: true })
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+
+const { game } = Astro.props
+const gameLogo = images[`/src/assets/img/${game.logo_name}`].default
 ---
 
 <section class="bg-black rounded-lg overflow-hidden w-fit pb-6">
-  <a href="https://thepandogsgames.itch.io/">
-    <Image src={polarisLogo} alt="Polaris logo." class="hover:brightness-125" />
+  <a href={game.link} class="text-white">
+    <Image
+      src={gameLogo}
+      alt={`${game.title} logo`}
+      class="hover:brightness-125"
+    />
   </a>
   <div class="mx-auto w-6/12 mt-4">
     <div class="flex justify-center gap-5 mb-6">
-      <WindowsIcon />
-      <ItchioIcon classList="fill-white w-5 h-5" />
+      {game.platforms.includes('windows') && <WindowsIcon />}
+      {
+        game.platforms.includes('itchio') && (
+          <ItchioIcon classList="fill-white w-5 h-5" />
+        )
+      }
     </div>
     <a
-      href="https://thepandogsgames.itch.io/"
+      href={game.link}
       rel="noreferrer"
       class="rounded-md flex justify-center bg-white px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-gray-400 hover:text-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
     >
