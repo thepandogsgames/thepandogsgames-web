@@ -10,5 +10,16 @@ export default defineConfig({
     defaultLocale: "en",
     locales: ["es", "en", "gal"],
   },
-  integrations: [alpine(), tailwind(), sitemap()],
+  integrations: [alpine(), tailwind(), sitemap(
+    {
+      i18n: {
+        defaultLocale: 'en',
+        locales: {
+          en: 'en-US',
+          es: 'es-ES',
+          gal: 'gl',
+        },
+      },
+    }
+  )],
 });
