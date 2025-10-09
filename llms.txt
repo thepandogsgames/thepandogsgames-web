@@ -1,0 +1,18 @@
+# The Pandogs Games
+
+> We are a small video game studio located in Vigo, where we strive to turn our ideas into video games.
+
+## Games
+
+- [Polaris](https://thepandogsgames.itch.io/polaris-remake)
+- [Hop-Hop! Pandog!](https://thepandogsgames.itch.io/hop-hop-pandog)
+- [KnightMadness](https://thepandogsgames.itch.io/knightmadness): A strategy game where you control a knight chess
+piece to eat all the pawns that constantly spawn on a small 4x4 board. Face the endless horde again and again
+to master your movements and reach a higher score.
+
+## Social
+
+- [Twitter / X](https://x.com/ThePandogsGames)
+- [Instagram](https://www.instagram.com/thepandogsgames/)
+- [Linkedin](https://www.linkedin.com/company/the-pandogs-games/)
+- [Itch.io](https://thepandogsgames.itch.io/)
