@@ -13,37 +13,52 @@ const gameLogo = images[`/src/assets/img/games/${game.logo_name}`].default
 ---
 
 <article
-  class="max-w-xs rounded-t-2xl rounded overflow-hidden shadow-lg bg-black text-white flex flex-col justify-between"
+  class="flex w-full max-w-sm cursor-pointer flex-col overflow-hidden rounded-xl bg-background-light shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 dark:bg-[#2C2C30]"
 >
-  <a href={game.link} rel="noreferrer">
-    <Image
-      src={gameLogo}
-      alt={`${game.title} logo`}
-      class="hover:brightness-125 w-full"
-    />
-  </a>
-  <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2 text-center">{game.title}</div>
+  <div class="relative group">
+    <a href={game.link} rel="noreferrer">
+      <Image
+        src={gameLogo}
+        alt={`${game.title} logo`}
+        class="hover:brightness-125 w-full aspect-[4/3] bg-cover bg-center"
+      />
+    </a>
+    <div
+      class="absolute inset-0 flex items-center justify-center bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+    >
+      <a
+        href={game.link}
+        rel="noreferrer"
+        class="flex w-fit h-12 items-center justify-center rounded-full text-white backdrop-blur-sm transition-colors"
+      >
+        <span class="text-3xl">{t('cardgame.button')}</span>
+      </a>
+    </div>
   </div>
-  <div class="flex flex-col lg:flex-row justify-around items-center pb-8 gap-8">
-    <span class="flex gap-x-5">
-      {
-        game.platforms.includes('windows') && (
-          <WindowsIcon classList="fill-white w-6 h-6" />
-        )
-      }
-      {
-        game.platforms.includes('itchio') && (
-          <ItchioIcon classList="fill-white w-6 h-6" />
-        )
-      }
-    </span>
+  <div class="flex flex-1 flex-col p-5">
+    <div class="flex-grow">
+      <h3 class="text-xl font-bold text-slate-800 dark:text-[#F5F5F5]">
+        {game.title}
+      </h3>
+      <div class="mt-4 flex items-center gap-3">
+        {
+          game.platforms.includes('windows') && (
+            <WindowsIcon classList="fill-white w-6 h-6" />
+          )
+        }
+        {
+          game.platforms.includes('itchio') && (
+            <ItchioIcon classList="fill-white w-6 h-6" />
+          )
+        }
+      </div>
+    </div>
     <a
       href={game.link}
       rel="noreferrer"
-      class="bg-white w-9/12 lg:w-32 text-black px-5 py-2 rounded-lg text-center hover:bg-gray-300"
+      class="mt-6 flex w-full min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-4 bg-white text-black text-base font-medium leading-normal transition-colors hover:opacity-70"
     >
-      {t('cardgame.button')}
+      <span class="truncate">{t('cardgame.button')}</span>
     </a>
   </div>
 </article>
