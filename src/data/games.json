@@ -16,5 +16,11 @@
     "logo_name": "knightmadness_logo.png",
     "link": "https://thepandogsgames.itch.io/knightmadness",
     "platforms": ["itchio"]
+  },
+  {
+    "title": "Planet Defenders",
+    "logo_name": "planetdefenders_logo.png",
+    "link": "https://thepandogsgames.itch.io/planetdefenders",
+    "platforms": ["itchio"]
   }
 ]
