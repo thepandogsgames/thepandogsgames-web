@@ -22,5 +22,11 @@
     "logo_name": "planetdefenders_logo.png",
     "link": "https://thepandogsgames.itch.io/planetdefenders",
     "platforms": ["itchio"]
+  },
+  {
+    "title": "Mad Bird",
+    "logo_name": "madbird_logo.png",
+    "link": "https://thepandogsgames.itch.io/madbird",
+    "platforms": ["windows", "itchio"]
   }
 ]
