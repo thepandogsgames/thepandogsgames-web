@@ -10,7 +10,7 @@ const t = useTranslations(lang)
 <section id="games" class="w-9/12 3xl:w-6/12 mx-auto">
   <h1 class="russo-font text-4xl mb-5 font-bold">{t('ourGames')}</h1>
   <div
-    class="grid grid-cols-1 lg:grid-cols-2 3xl:lg:grid-cols-3 mt-12 gap-12 justify-items-center"
+    class="grid grid-cols-1 lg:grid-cols-3 3xl:lg:grid-cols-4 mt-12 gap-12 justify-items-center"
   >
     {games.map((game) => <CardGame game={game} />)}
   </div>
