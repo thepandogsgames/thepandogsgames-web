@@ -13,28 +13,24 @@ const gameLogo = images[`/src/assets/img/games/${game.logo_name}`].default
 ---
 
 <article
-  class="flex w-full max-w-sm cursor-pointer flex-col overflow-hidden rounded-xl bg-background-light shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 dark:bg-[#2C2C30]"
+  class="flex w-full max-w-sm flex-col overflow-hidden rounded-xl bg-background-light shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 dark:bg-[#2C2C30]"
 >
-  <div class="relative group">
-    <a href={game.link} rel="noreferrer">
-      <Image
-        src={gameLogo}
-        alt={`${game.title} logo`}
-        class="hover:brightness-125 w-full aspect-[4/3] bg-cover bg-center"
-      />
-    </a>
+  <a href={game.link} rel="noreferrer" class="relative group cursor-pointer">
+    <Image
+      src={gameLogo}
+      alt={`${game.title} logo`}
+      class="hover:brightness-125 w-full aspect-[4/3] bg-cover bg-center"
+    />
     <div
       class="absolute inset-0 flex items-center justify-center bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
     >
-      <a
-        href={game.link}
-        rel="noreferrer"
-        class="flex w-fit h-12 items-center justify-center rounded-full text-white backdrop-blur-sm transition-colors"
+      <p
+        class="flex w-fit h-12 items-center justify-center rounded-full text-white backdrop-blur-sm transition-colors text-3xl"
       >
-        <span class="text-3xl">{t('cardgame.button')}</span>
-      </a>
+        {t('cardgame.button')}
+      </p>
     </div>
-  </div>
+  </a>
   <div class="flex flex-1 flex-col p-5">
     <div class="flex-grow">
       <h3 class="text-xl font-bold text-slate-800 dark:text-[#F5F5F5]">
