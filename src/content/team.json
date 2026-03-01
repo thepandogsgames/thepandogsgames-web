@@ -1,0 +1,50 @@
+{
+  "alex": {
+    "name": "Alejandro Estévez",
+    "image": "@assets/img/team/alex.jpg",
+    "jobKey": "job.cofounder-programmer-gamedesigner",
+    "linkedin": "https://www.linkedin.com/in/alejandro-est%C3%A9vez-mart%C3%ADnez-821884215/",
+    "twitter": "https://twitter.com/alistairaem",
+    "github": "https://github.com/alistairaem"
+  },
+  "carlos": {
+    "name": "Carlos Fraile",
+    "image": "@assets/img/team/carlos.jpeg",
+    "jobKey": "job.cofounder-programmer-ux",
+    "linkedin": "https://www.linkedin.com/in/carlos-fraile-93a466127/",
+    "twitter": "https://twitter.com/ThePandogs",
+    "github": "https://github.com/ThePandogs"
+  },
+  "sergio": {
+    "name": "Sergio Alonso",
+    "image": "@assets/img/team/sergio.webp",
+    "jobKey": "job.cofounder-programmer",
+    "linkedin": "https://es.linkedin.com/in/sergio-alonso-otero",
+    "github": "https://github.com/seralot"
+  },
+  "fran": {
+    "name": "Fran Santos",
+    "image": "@assets/img/team/fran.jpg",
+    "jobKey": "job.musician",
+    "linkedin": "https://www.linkedin.com/in/francisco-javier-de-los-santos-alonso-842061178/",
+    "twitter": "https://twitter.com/fjsanalo"
+  },
+  "ruben": {
+    "name": "Rubén Riveiro",
+    "image": "@assets/img/team/ruben.jpg",
+    "jobKey": "job.artist",
+    "linkedin": "https://www.linkedin.com/in/ruben-riveiro-fernandez-45930443"
+  },
+  "pampi": {
+    "name": "Sergio Pampillón",
+    "image": "@assets/img/team/pampi.jpg",
+    "jobKey": "job.artist",
+    "twitter": "https://twitter.com/PixelPamp"
+  },
+  "ramiro": {
+    "name": "Ramiro Zamora",
+    "image": "@assets/img/team/ramiro.avif",
+    "jobKey": "job.gamedesigner",
+    "twitter": "https://twitter.com/MarikEGT"
+  }
+}
