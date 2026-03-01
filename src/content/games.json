@@ -1,32 +1,32 @@
-[
-  {
+{
+  "polaris": {
     "title": "Polaris",
-    "logo_name": "polaris_logo.png",
+    "image": "@assets/img/games/polaris_logo.png",
     "link": "https://thepandogsgames.itch.io/",
     "platforms": ["windows", "itchio"]
   },
-  {
+  "hop-hop-pandog": {
     "title": "Hop-Hop! Pandog!",
-    "logo_name": "hophoppandog_logo.jpg",
+    "image": "@assets/img/games/hophoppandog_logo.jpg",
     "link": "https://thepandogsgames.itch.io/hop-hop-pandog",
     "platforms": ["windows", "itchio"]
   },
-  {
+  "knightmadness": {
     "title": "KnightMadness",
-    "logo_name": "knightmadness_logo.png",
+    "image": "@assets/img/games/knightmadness_logo.png",
     "link": "https://thepandogsgames.itch.io/knightmadness",
     "platforms": ["itchio"]
   },
-  {
+  "planet-defenders": {
     "title": "Planet Defenders",
-    "logo_name": "planetdefenders_logo.png",
+    "image": "@assets/img/games/planetdefenders_logo.png",
     "link": "https://thepandogsgames.itch.io/planetdefenders",
     "platforms": ["itchio"]
   },
-  {
+  "mad-bird": {
     "title": "Mad Bird",
-    "logo_name": "madbird_logo.png",
+    "image": "@assets/img/games/madbird_logo.png",
     "link": "https://thepandogsgames.itch.io/madbird",
     "platforms": ["windows", "itchio"]
   }
-]
+}

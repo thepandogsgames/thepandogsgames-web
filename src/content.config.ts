@@ -1,6 +1,17 @@
 import { defineCollection, z } from 'astro:content'
 import { file } from 'astro/loaders'
 
+const games = defineCollection({
+  loader: file('src/content/games.json'),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      image: image(),
+      link: z.string().url(),
+      platforms: z.array(z.enum(['windows', 'itchio'])),
+    }),
+})
+
 const team = defineCollection({
   loader: file('src/content/team.json'),
   schema: ({ image }) =>
@@ -16,4 +27,4 @@ const team = defineCollection({
     }),
 })
 
-export const collections = { team }
+export const collections = { games, team }

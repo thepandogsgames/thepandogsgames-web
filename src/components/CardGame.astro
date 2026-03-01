@@ -4,12 +4,10 @@ import WindowsIcon from '@icons/windows.astro'
 import ItchioIcon from '@icons/itchio.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 
-const images = import.meta.glob('/src/assets/img/games/*', { eager: true })
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
 const { game } = Astro.props
-const gameLogo = images[`/src/assets/img/games/${game.logo_name}`].default
 ---
 
 <article
@@ -17,7 +15,7 @@ const gameLogo = images[`/src/assets/img/games/${game.logo_name}`].default
 >
   <a href={game.link} rel="noreferrer" class="relative group cursor-pointer">
     <Image
-      src={gameLogo}
+      src={game.image}
       alt={`${game.title} logo`}
       class="hover:brightness-125 w-full aspect-[4/3] bg-cover bg-center"
     />
