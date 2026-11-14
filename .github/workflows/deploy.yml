@@ -15,11 +15,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Install, build, and upload your site output
-        uses: withastro/action@v2
+        uses: withastro/action@v6
         with:
-            package-manager: bun@latest
+          node-version: 24
+          package-manager: pnpm@12.18.0
+
+      - name: Check dependency files are unchanged
+        run: git diff --exit-code -- package.json pnpm-lock.yaml pnpm-workspace.yaml
 
   deploy:
     needs: build
@@ -30,4 +34,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

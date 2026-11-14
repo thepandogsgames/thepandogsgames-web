@@ -1,12 +1,15 @@
 ---
 import { getCollection } from 'astro:content'
 import CardGame from '@components/CardGame.astro'
+import gamesData from '../content/games.json'
 
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
 const games = await getCollection('games')
+const gameOrder = Object.keys(gamesData)
+games.sort((a, b) => gameOrder.indexOf(a.id) - gameOrder.indexOf(b.id))
 ---
 
 <section id="games" class="w-9/12 3xl:w-6/12 mx-auto">

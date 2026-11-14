@@ -23,7 +23,7 @@ const { logo } = Astro.props
   aria-label="Global"
 >
   <div class="relative flex lg:flex-1">
-    <button class="flex items-center -m-1.5 px-1.5">
+    <button class="flex items-center -m-1.5 px-1.5 cursor-pointer">
       <span class="sr-only">ThePandogsGames</span>
       <Image src={logo} alt="Logo ThePandogsGames" class="w-16" />
     </button>
@@ -32,7 +32,7 @@ const { logo } = Astro.props
     <button
       x-on:click="isOpenMobileMenu = true"
       type="button"
-      class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+      class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white cursor-pointer"
     >
       <span class="sr-only">{t('openMenu')}</span>
       <OpenMenuIcon ariaLabel={t('openMenu')} />
@@ -61,7 +61,7 @@ const { logo } = Astro.props
       <button
         type="button"
         x-on:click="isOpenChangeLanguage = !isOpenChangeLanguage"
-        class="flex items-center gap-x-1 text-sm hover:opacity-75 font-semibold leading-6 text-gray-900"
+        class="flex items-center gap-x-1 text-sm hover:opacity-75 font-semibold leading-6 text-gray-900 cursor-pointer"
         aria-expanded="false"
       >
         <LanguageIcon classList="w-6" ariaLabel={t('changeLanguage')} />

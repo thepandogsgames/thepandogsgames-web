@@ -1,12 +1,15 @@
 ---
 import { getCollection } from 'astro:content'
 import CardTeam from '@components/CardTeam.astro'
+import teamData from '../content/team.json'
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
 const teamMembers = await getCollection('team')
+const teamOrder = Object.keys(teamData)
+teamMembers.sort((a, b) => teamOrder.indexOf(a.id) - teamOrder.indexOf(b.id))
 ---
 
 <section id="whoAreWe" class="w-9/12 3xl:w-6/12 mx-auto">
