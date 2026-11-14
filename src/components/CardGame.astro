@@ -23,14 +23,14 @@ const { game } = Astro.props
       class="absolute inset-0 flex items-center justify-center bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
     >
       <p
-        class="flex w-fit h-12 items-center justify-center rounded-full text-white backdrop-blur-sm transition-colors text-3xl"
+        class="flex w-fit h-12 items-center justify-center rounded-full text-white backdrop-blur-xs transition-colors text-3xl"
       >
         {t('cardgame.button')}
       </p>
     </div>
   </a>
   <div class="flex flex-1 flex-col p-5">
-    <div class="flex-grow">
+    <div class="grow">
       <h3 class="text-xl font-bold text-slate-800 dark:text-[#F5F5F5]">
         {game.title}
       </h3>

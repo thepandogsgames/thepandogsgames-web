@@ -9,7 +9,7 @@ const t = useTranslations(lang)
 
 <header
   x-data="{isOpenMobileMenu: false, isOpenLeftMenu: false}"
-  x-bind:class="isOpenLeftMenu ? 'bg-white border-b-2' : 'bg-black' "
+  x-bind:class="isOpenLeftMenu ? 'bg-white border-b-2 border-gray-200' : 'bg-black' "
 >
   <Headerbase logo={thePandogsGamesLogo} />
   <HeaderMobile logo={thePandogsGamesLogo} />

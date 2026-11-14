@@ -1,5 +1,6 @@
-import { defineCollection, z } from 'astro:content'
+import { defineCollection } from 'astro:content'
 import { file } from 'astro/loaders'
+import { z } from 'astro/zod'
 
 const games = defineCollection({
   loader: file('src/content/games.json'),
@@ -7,7 +8,7 @@ const games = defineCollection({
     z.object({
       title: z.string(),
       image: image(),
-      link: z.string().url(),
+      link: z.url(),
       platforms: z.array(z.enum(['windows', 'itchio'])),
     }),
 })
@@ -19,11 +20,11 @@ const team = defineCollection({
       name: z.string(),
       image: image(),
       jobKey: z.string(),
-      linkedin: z.string().url().optional(),
-      twitter: z.string().url().optional(),
-      github: z.string().url().optional(),
-      instagram: z.string().url().optional(),
-      artstation: z.string().url().optional(),
+      linkedin: z.url().optional(),
+      twitter: z.url().optional(),
+      github: z.url().optional(),
+      instagram: z.url().optional(),
+      artstation: z.url().optional(),
     }),
 })
 

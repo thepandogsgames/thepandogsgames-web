@@ -6,15 +6,14 @@ Website of the indie studio The Pandogs Games located in Vigo, Galicia.
 
 1. Clone this repository: `git clone git@github.com:thepandogsgames/thepandogsgames-web.git`
 2. Navigate to the project directory: `cd thepandogsgames-web`
-3. Install the dependencies: `npm ci`
-4. Start the development server: `npm run dev`
+3. Install the dependencies: `pnpm install --frozen-lockfile`
+4. Start the development server: `pnpm run dev`
 
 ## Stack
 
 - Astro: https://astro.build/
-- Tailwind CSS: https://tailwindcss.com/ ([astrojs/tailwind](https://docs.astro.build/en/guides/integrations-guide/tailwind/))
+- Tailwind CSS 4: https://tailwindcss.com/ ([Vite plugin](https://docs.astro.build/en/guides/styling/#tailwind))
 - Alpine.js: https://alpinejs.dev/ ([astrojs/alpinejs](https://docs.astro.build/en/guides/integrations-guide/alpinejs/))
-
 
 ## License
 
